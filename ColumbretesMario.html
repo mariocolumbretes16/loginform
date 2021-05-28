@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+</head>
+<style>
+		body{
+			text-align: center;
+			font-family: Castellar;
+			background-color:lightgreen;"
+		}
+		
+	</style>
+	<body>
+	
+	<div id="main">
+	<div class="h-tag">
+<br>
+<br>
+<br>
+<br>
+<hr style="border-color: black">
+
+	<h2> Please Login </h2>
+	</div>
+<hr style="border-color: black">
+
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+<br>
+<br>
+<br>
+<form name="login">
+USERNAME: user 
+<br>
+PASSWORD: pass123
+	<td> User Name :</td>
+	<td><input type="text" placeholder="Type user name here" id="username" class="tb" /></td>
+	</tr>
+	<tr>
+	<td>Password :</td>
+	<td><input type="password" placeholder="Type Password here" id="pass" class="tb" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+
+	<input type="button" onclick="check(this.form)" value="Login"/></td>
+
+	</tr>
+	</table>
+	</div>
+  
+	</div>
+	
+
+
+    <hr style="border-color: black">
+</form>
+<script>
+function check(form)
+{
+if(form.username.value == "user" && form.pass.value == "pass123")
+ {
+alert("You Logged in")
+}
+ else
+ {
+   alert("Wrong Password or Username")
+  }
+}
+</script>
+  </body>
+  </html>
+  
